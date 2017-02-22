@@ -1,16 +1,15 @@
 <?php
+/**
+ * @author Carsten Biebricher
+ */
+
 namespace HDNET\Microformat\ViewHelper\Microformat;
 
-/*                                                                        *
-
- */
 use HDNET\Microformat\ViewHelper\Format\JsonLdViewHelper;
 use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
 
-// use TYPO3\CMS\Fluid\Core\ViewHelper\Facets\CompilableInterface;
-
 /**
- * @api
+ * Class AbstractMicroformatViewHelper
  */
 abstract class AbstractMicroformatViewHelper extends AbstractViewHelper
 {

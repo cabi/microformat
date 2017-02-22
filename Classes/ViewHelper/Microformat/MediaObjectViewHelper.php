@@ -1,6 +1,13 @@
 <?php
+/**
+ * @author Carsten Biebricher
+ */
+
 namespace HDNET\Microformat\ViewHelper\Microformat;
 
+/**
+ * Class MediaObjectViewHelper
+ */
 class MediaObjectViewHelper extends CreativeWorkViewHelper
 {
     const TYPE = 'MediaObject';

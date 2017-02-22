@@ -1,13 +1,14 @@
 <?php
+/**
+ * @author Carsten Biebricher
+ */
+
 namespace HDNET\Microformat\ViewHelper\Microformat;
 
 /**
  * Class CreativeWorkViewHelper
  *
  * @see http://schema.org/CreativeWork
- *
- * @package HDNET\Microformat\ViewHelper\Microformat
- * @author  Carsten Biebricher <carsten.biebricher@hdnet.de>
  */
 class CreativeWorkViewHelper extends ThingViewHelper
 {

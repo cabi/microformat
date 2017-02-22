@@ -1,14 +1,14 @@
 <?php
+/**
+ * @author Carsten Biebricher
+ */
 
 namespace HDNET\Microformat\ViewHelper\Format;
 
-/*                                                                        *
-
- */
 use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
 
 /**
- * @api
+ * JsonLdViewHelper
  */
 class JsonLdViewHelper extends AbstractViewHelper
 {
@@ -21,8 +21,12 @@ class JsonLdViewHelper extends AbstractViewHelper
      *
      * @return string
      */
-    public function render($showInHead = true, $jsonPrettyPrint = false, $jsonUnescapedUnicode = true, $jsonUnescapedSlashes = true)
-    {
+    public function render(
+        $showInHead = true,
+        $jsonPrettyPrint = false,
+        $jsonUnescapedUnicode = true,
+        $jsonUnescapedSlashes = true
+    ) {
         $this->createStack();
 
         $children = $this->renderChildren();
@@ -72,6 +76,7 @@ class JsonLdViewHelper extends AbstractViewHelper
     }
 
     /**
+     * Create the Stack to save all the microformat information.
      *
      */
     protected function createStack()

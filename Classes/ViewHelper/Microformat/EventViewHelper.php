@@ -1,13 +1,14 @@
 <?php
+/**
+ * @author Carsten Biebricher
+ */
+
 namespace HDNET\Microformat\ViewHelper\Microformat;
 
 /**
  * Class EventViewHelper
  *
  * @see http://schema.org/Event
- *
- * @package HDNET\Microformat\ViewHelper\Microformat
- * @author  Carsten Biebricher <carsten.biebricher@hdnet.de>
  */
 class EventViewHelper extends ThingViewHelper
 {
