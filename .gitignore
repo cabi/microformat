@@ -1,0 +1,31 @@
+######################
+# OS generated files #
+######################
+
+.DS_Store*
+ehthumbs.db
+Thumbs.db
+*~
+*.lock
+
+########
+# IDEs #
+########
+
+.buildpath
+.project
+.settings
+
+############
+# PhpStorm #
+############
+
+.idea
+atlassian-ide-plugin.xml
+
+#####################
+# Versioning systems #
+######################
+
+.svn
+
