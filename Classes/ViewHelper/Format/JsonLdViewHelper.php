@@ -42,8 +42,9 @@ class JsonLdViewHelper extends AbstractViewHelper
         $content .= "\n" . '</script>';
 
         if ($showInHead) {
-            $GLOBALS['TSFE']->additionalHeaderData['microformat'] = $content;
-            return;
+            static $counter = 0;
+            $GLOBALS['TSFE']->additionalHeaderData['microformat' . $counter++] = $content;
+            return '';
         }
 
         return $content;
