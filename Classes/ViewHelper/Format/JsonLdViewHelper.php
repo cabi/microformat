@@ -29,8 +29,7 @@ class JsonLdViewHelper extends AbstractViewHelper
     ) {
         $this->createStack();
 
-        $children = $this->renderChildren();
-
+       $this->renderChildren();
 
         $stack = $this->getStack();
         $array = $stack->pop();
