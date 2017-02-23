@@ -22,7 +22,8 @@ class OfferViewHelper extends IntangibleViewHelper
      * @return void
      * @api
      */
-    public function initializeArguments() {
+    public function initializeArguments()
+    {
         parent::initializeArguments();
 
         $this->registerArgument('areaServed', 'string', 'The geographic area where a service or offered item is provided. Supersedes serviceArea.');

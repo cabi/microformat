@@ -20,7 +20,8 @@ class IntangibleViewHelper extends ThingViewHelper
      * @return void
      * @api
      */
-    public function initializeArguments() {
+    public function initializeArguments()
+    {
         parent::initializeArguments();
     }
 }

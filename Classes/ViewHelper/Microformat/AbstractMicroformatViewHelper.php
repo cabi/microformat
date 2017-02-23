@@ -79,7 +79,7 @@ abstract class AbstractMicroformatViewHelper extends AbstractViewHelper
 
     /**
      * @param string $key
-     * @param $element
+     * @param        $element
      */
     protected function updateLastElementOnStack($key, $element)
     {
@@ -128,8 +128,8 @@ abstract class AbstractMicroformatViewHelper extends AbstractViewHelper
 
     /**
      * @param string $path
-     * @param array $microformatStorage
-     * @param $array
+     * @param array  $microformatStorage
+     * @param        $array
      */
     protected function mergeArrayByPath($path, &$microformatStorage, $array)
     {

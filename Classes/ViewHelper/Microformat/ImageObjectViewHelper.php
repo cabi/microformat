@@ -18,7 +18,8 @@ class ImageObjectViewHelper extends MediaObjectViewHelper
      * @return void
      * @api
      */
-    public function initializeArguments() {
+    public function initializeArguments()
+    {
         parent::initializeArguments();
 
 
