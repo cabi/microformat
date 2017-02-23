@@ -1,5 +1,7 @@
 <?php
 /**
+ * The most generic type of item.
+ *
  * @author Carsten Biebricher
  */
 
