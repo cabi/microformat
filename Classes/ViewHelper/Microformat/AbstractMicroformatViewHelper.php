@@ -41,7 +41,9 @@ abstract class AbstractMicroformatViewHelper extends AbstractViewHelper
 
     }
 
-
+    /**
+     *
+     */
     protected function createEmptyElementOnStack()
     {
         $element = [];
@@ -52,7 +54,7 @@ abstract class AbstractMicroformatViewHelper extends AbstractViewHelper
     }
 
     /**
-     *
+     * @param $element
      */
     protected function pushOnStack($element)
     {
@@ -75,6 +77,10 @@ abstract class AbstractMicroformatViewHelper extends AbstractViewHelper
         return $element;
     }
 
+    /**
+     * @param string $key
+     * @param $element
+     */
     protected function updateLastElementOnStack($key, $element)
     {
         $stackElement = $this->popFromStack();
@@ -93,12 +99,18 @@ abstract class AbstractMicroformatViewHelper extends AbstractViewHelper
         $this->pushOnStack($newElement);
     }
 
+    /**
+     * @param $preArray
+     */
     protected function setContextAndType(&$preArray)
     {
         $preArray['@context'] = $this::CONTEXT;
         $preArray['@type'] = $this::TYPE;
     }
 
+    /**
+     * @param array $preArray
+     */
     protected function processArguments(&$preArray)
     {
         $keys = array_keys($this->arguments);
@@ -114,6 +126,11 @@ abstract class AbstractMicroformatViewHelper extends AbstractViewHelper
 
     }
 
+    /**
+     * @param string $path
+     * @param array $microformatStorage
+     * @param $array
+     */
     protected function mergeArrayByPath($path, &$microformatStorage, $array)
     {
         if ($path) {
