@@ -14,7 +14,7 @@ $EM_CONF[$_EXTKEY] = array (
     'title' => 'Microformat - describe your data',
     'description' => 'Describe your data in microformat. ViewHelper to build a schema.org structure. Development on https://github.com/cabi/calendarize',
     'category' => 'fe',
-    'version' => '0.0.3',
+    'version' => '0.0.4',
     'state' => 'alpha',
     'clearcacheonload' => true,
     'author' => 'Carsten Biebricher',
@@ -41,8 +41,7 @@ $EM_CONF[$_EXTKEY] = array (
                     'HDNET\\Microformat\\' => 'Classes/'
                 ),
         ),
-    'uploadfolder' => true,
-    'createDirs' => NULL,
-    'author_company' => NULL,
+    'uploadfolder' => false,
+    'createDirs' => null,
+    'author_company' => null,
 );
-

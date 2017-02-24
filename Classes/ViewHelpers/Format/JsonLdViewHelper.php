@@ -3,9 +3,9 @@
  * @author Carsten Biebricher
  */
 
-namespace HDNET\Microformat\ViewHelper\Format;
+namespace HDNET\Microformat\ViewHelpers\Format;
 
-use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
+use TYPO3\CMS\Fluid\Core\ViewHelpers\AbstractViewHelper;
 
 /**
  * JsonLdViewHelper
@@ -29,7 +29,7 @@ class JsonLdViewHelper extends AbstractViewHelper
     ) {
         $this->createStack();
 
-       $this->renderChildren();
+        $this->renderChildren();
 
         $stack = $this->getStack();
         $array = $stack->pop();
@@ -76,7 +76,6 @@ class JsonLdViewHelper extends AbstractViewHelper
     }
 
     /**
-     * Create the Stack to save all the microformat information.
      *
      */
     protected function createStack()
@@ -91,7 +90,8 @@ class JsonLdViewHelper extends AbstractViewHelper
      */
     protected function getStack()
     {
-        /** @var \SplStack $stack */
+        /**
+        * @var \SplStack $stack */
         $stack = $this->viewHelperVariableContainer->get(self::class, 'stack');
         return $stack;
     }

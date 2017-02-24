@@ -3,10 +3,10 @@
  * @author Carsten Biebricher
  */
 
-namespace HDNET\Microformat\ViewHelper\Microformat;
+namespace HDNET\Microformat\ViewHelpers\Microformat;
 
-use HDNET\Microformat\ViewHelper\Format\JsonLdViewHelper;
-use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
+use HDNET\Microformat\ViewHelpers\Format\JsonLdViewHelper;
+use TYPO3\CMS\Fluid\Core\ViewHelpers\AbstractViewHelper;
 
 /**
  * Class AbstractMicroformatViewHelper
@@ -47,7 +47,8 @@ abstract class AbstractMicroformatViewHelper extends AbstractViewHelper
     protected function createEmptyElementOnStack()
     {
         $element = [];
-        /** @var \SplStack $stack */
+        /**
+        * @var \SplStack $stack */
         $stack = $this->viewHelperVariableContainer->get(JsonLdViewHelper::class, 'stack');
         $stack->push($element);
         $this->viewHelperVariableContainer->addOrUpdate(JsonLdViewHelper::class, 'stack', $stack);
@@ -58,7 +59,8 @@ abstract class AbstractMicroformatViewHelper extends AbstractViewHelper
      */
     protected function pushOnStack($element)
     {
-        /** @var \SplStack $stack */
+        /**
+        * @var \SplStack $stack */
         $stack = $this->viewHelperVariableContainer->get(JsonLdViewHelper::class, 'stack');
         $stack->push($element);
         $this->viewHelperVariableContainer->addOrUpdate(JsonLdViewHelper::class, 'stack', $stack);
@@ -69,7 +71,8 @@ abstract class AbstractMicroformatViewHelper extends AbstractViewHelper
      */
     protected function popFromStack()
     {
-        /** @var \SplStack $stack */
+        /**
+        * @var \SplStack $stack */
         $stack = $this->viewHelperVariableContainer->get(JsonLdViewHelper::class, 'stack');
         $element = $stack->pop();
         $this->viewHelperVariableContainer->addOrUpdate(JsonLdViewHelper::class, 'stack', $stack);
@@ -78,7 +81,7 @@ abstract class AbstractMicroformatViewHelper extends AbstractViewHelper
     }
 
     /**
-     * @param string $key
+     * @param string  $key
      * @param        $element
      */
     protected function updateLastElementOnStack($key, $element)
