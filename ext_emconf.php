@@ -14,7 +14,7 @@ $EM_CONF[$_EXTKEY] = array (
     'title' => 'Microformat - describe your data',
     'description' => 'Describe your data in microformat. ViewHelper to build a schema.org structure. Development on https://github.com/cabi/calendarize',
     'category' => 'fe',
-    'version' => '0.0.4',
+    'version' => '0.0.5',
     'state' => 'alpha',
     'clearcacheonload' => true,
     'author' => 'Carsten Biebricher',
@@ -24,8 +24,7 @@ $EM_CONF[$_EXTKEY] = array (
             'depends' =>
                 array (
                     'typo3' => '6.2.0-8.99.99',
-                    'php' => '5.5.0-0.0.0',
-                    'autoloader' => '2.0.0-0.0.0',
+                    'php' => '5.5.0-0.0.0'
                 ),
             'conflicts' =>
                 array (
