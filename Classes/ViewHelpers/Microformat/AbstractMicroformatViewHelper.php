@@ -6,7 +6,7 @@
 namespace HDNET\Microformat\ViewHelpers\Microformat;
 
 use HDNET\Microformat\ViewHelpers\Format\JsonLdViewHelper;
-use TYPO3\CMS\Fluid\Core\ViewHelpers\AbstractViewHelper;
+use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
 
 /**
  * Class AbstractMicroformatViewHelper
