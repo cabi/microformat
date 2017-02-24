@@ -18,7 +18,8 @@ class MediaObjectViewHelper extends CreativeWorkViewHelper
      * @return void
      * @api
      */
-    public function initializeArguments() {
+    public function initializeArguments()
+    {
         parent::initializeArguments();
 
         $this->registerArgument('bitrate', 'string', 'The bitrate of the media object.');

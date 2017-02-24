@@ -20,7 +20,8 @@ class CreativeWorkViewHelper extends ThingViewHelper
      * @return void
      * @api
      */
-    public function initializeArguments() {
+    public function initializeArguments()
+    {
         parent::initializeArguments();
 
         $this->registerArgument('accessibilityAPI', 'string', 'Indicates that the resource is compatible with the referenced accessibility API (WebSchemas wiki lists possible values).');

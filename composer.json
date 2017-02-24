@@ -1,8 +1,9 @@
 {
   "name": "cabi/microformat",
   "type": "typo3-cms-extension",
-  "version": "0.0.22",
+  "version": "0.0.3",
   "description": "Add microformats to your page.",
+  "prefer-stable": true,
   "autoload": {
     "psr-4": {
       "HDNET\\Microformat\\": "Classes/"
@@ -18,7 +19,9 @@
     "TYPO3 CMS",
     "Microformat",
     "json-ld",
-    "schema.org"
+    "schema.org",
+    "event",
+    "google"
   ],
   "authors": [
     {

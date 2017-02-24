@@ -24,7 +24,7 @@ abstract class AbstractMicroformatViewHelper extends AbstractViewHelper
         // add new level on stack
         $this->createEmptyElementOnStack();
 
-        $children = $this->renderChildren();
+        $this->renderChildren();
 
         // get highest level from stack
         // drop highest level on stack
@@ -79,7 +79,7 @@ abstract class AbstractMicroformatViewHelper extends AbstractViewHelper
 
     /**
      * @param string $key
-     * @param $element
+     * @param        $element
      */
     protected function updateLastElementOnStack($key, $element)
     {
@@ -119,7 +119,7 @@ abstract class AbstractMicroformatViewHelper extends AbstractViewHelper
             if ($key == 'key') {
                 continue;
             }
-            if ($this->hasArgument($key)) {
+            if ($this->hasArgument($key) && trim($this->arguments[$key]) != '') {
                 $preArray[$key] = $this->arguments[$key];
             }
         }
@@ -128,8 +128,8 @@ abstract class AbstractMicroformatViewHelper extends AbstractViewHelper
 
     /**
      * @param string $path
-     * @param array $microformatStorage
-     * @param $array
+     * @param array  $microformatStorage
+     * @param        $array
      */
     protected function mergeArrayByPath($path, &$microformatStorage, $array)
     {

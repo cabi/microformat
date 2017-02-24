@@ -20,7 +20,8 @@ class EventViewHelper extends ThingViewHelper
      * @return void
      * @api
      */
-    public function initializeArguments() {
+    public function initializeArguments()
+    {
         parent::initializeArguments();
 
         $this->registerArgument('doorTime', 'string', 'The time admission will commence.');

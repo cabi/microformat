@@ -22,7 +22,8 @@ class PlaceViewHelper extends ThingViewHelper
      * @return void
      * @api
      */
-    public function initializeArguments() {
+    public function initializeArguments()
+    {
         parent::initializeArguments();
 
         $this->registerArgument('address', 'string', 'Physical address of the item.');

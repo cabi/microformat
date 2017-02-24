@@ -22,7 +22,8 @@ class ThingViewHelper extends AbstractMicroformatViewHelper
      * @return void
      * @api
      */
-    public function initializeArguments() {
+    public function initializeArguments()
+    {
         parent::initializeArguments();
 
         $this->registerArgument('alternateName', 'string', 'An alias for the item.');

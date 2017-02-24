@@ -20,7 +20,8 @@ class StructuredValueViewHelper extends IntangibleViewHelper
      * @return void
      * @api
      */
-    public function initializeArguments() {
+    public function initializeArguments()
+    {
         parent::initializeArguments();
     }
 }

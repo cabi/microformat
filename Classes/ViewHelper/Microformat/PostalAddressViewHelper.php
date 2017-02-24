@@ -22,7 +22,8 @@ class PostalAddressViewHelper extends ContactPointViewHelper
      * @return void
      * @api
      */
-    public function initializeArguments() {
+    public function initializeArguments()
+    {
         parent::initializeArguments();
 
         $this->registerArgument('addressCountry', 'string', 'The country. For example, USA. You can also provide the two-letter ISO 3166-1 alpha-2 country code.');
