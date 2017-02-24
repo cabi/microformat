@@ -41,8 +41,7 @@ $EM_CONF[$_EXTKEY] = array (
                     'HDNET\\Microformat\\' => 'Classes/'
                 ),
         ),
-    'uploadfolder' => true,
-    'createDirs' => NULL,
-    'author_company' => NULL,
+    'uploadfolder' => false,
+    'createDirs' => null,
+    'author_company' => null,
 );
-
