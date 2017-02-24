@@ -3,7 +3,7 @@
  * @author Carsten Biebricher
  */
 
-namespace HDNET\Microformat\ViewHelper\Microformat;
+namespace HDNET\Microformat\ViewHelpers\Microformat;
 
 /**
  * Class MediaObjectViewHelper
