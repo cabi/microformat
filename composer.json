@@ -1,7 +1,7 @@
 {
   "name": "cabi/microformat",
   "type": "typo3-cms-extension",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Add microformats to your page.",
   "prefer-stable": true,
   "autoload": {
