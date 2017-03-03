@@ -7,6 +7,8 @@ namespace HDNET\Microformat\ViewHelpers\Microformat;
 
 /**
  * Class MediaObjectViewHelper
+ *
+ * @see http://schema.org/MediaObject
  */
 class MediaObjectViewHelper extends CreativeWorkViewHelper
 {
