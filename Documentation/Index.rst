@@ -22,3 +22,6 @@ Microformat - add microformat-juice to your page
 
 .. toctree::
 
+	Introduction/Index
+	Examples/Index
+	ChangeLog/Index
