@@ -10,7 +10,7 @@ namespace HDNET\Microformat\ViewHelpers\Microformat;
  *
  * @see http://schema.org/Rating
  */
-class RatingValueViewHelper extends IntangibleViewHelper
+class RatingViewHelper extends IntangibleViewHelper
 {
     const TYPE = 'Rating';
 
