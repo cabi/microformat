@@ -1,7 +1,7 @@
 <?php
 
 /***************************************************************
- * Extension Manager/Repository config file for ext "calendarize".
+ * Extension Manager/Repository config file for ext "microformat".
  *
  * Auto generated 10-02-2017 14:16
  *
@@ -14,7 +14,7 @@ $EM_CONF[$_EXTKEY] = array (
     'title' => 'Microformat - describe your data',
     'description' => 'Describe your data in microformat. ViewHelper to build a schema.org structure. Development on https://github.com/cabi/calendarize',
     'category' => 'fe',
-    'version' => '0.0.6',
+    'version' => '0.0.7',
     'state' => 'alpha',
     'clearcacheonload' => true,
     'author' => 'Carsten Biebricher',
@@ -24,7 +24,7 @@ $EM_CONF[$_EXTKEY] = array (
             'depends' =>
                 array (
                     'typo3' => '6.2.0-8.99.99',
-                    'php' => '5.5.0-0.0.0'
+                    'php' => '5.5.0-7.1.0'
                 ),
             'conflicts' =>
                 array (
