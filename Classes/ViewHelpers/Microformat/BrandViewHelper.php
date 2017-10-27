@@ -10,7 +10,7 @@ namespace HDNET\Microformat\ViewHelpers\Microformat;
  *
  * @see http://schema.org/Brand
  */
-class BrandValueViewHelper extends IntangibleViewHelper
+class BrandViewHelper extends IntangibleViewHelper
 {
     const TYPE = 'Brand';
 
